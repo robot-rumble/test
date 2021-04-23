@@ -1,0 +1,148 @@
+apiVersion: v1alpha
+kind: testcafe
+sauce:
+  region: us-west-1
+  concurrency: 5
+  metadata:
+    build: alpha
+testcafe:
+  version: 1.11.0
+defaults:
+  mode: sauce
+  disableScreenshots: true
+  record: false
+  speed: 1
+rootDir: ./
+suites:
+  - name: MacOS Safari Latest
+    platformName: macos 11.00
+    browserName: safari
+    browserVersion: latest
+    src:
+      - tests/*.test.js
+  - name: MacOS Chrome Latest
+    platformName: macos 11.00
+    browserName: chrome
+    browserVersion: latest
+    src:
+      - tests/*.test.js
+  - name: MacOS Firefox Latest
+    platformName: macos 11.00
+    browserName: firefox
+    browserVersion: latest
+    src:
+      - tests/*.test.js
+  - name: MacOS Edge Latest
+    platformName: macos 11.00
+    browserName: microsoftedge
+    browserVersion: latest
+    src:
+      - tests/*.test.js
+  - name: Chrome Latest
+    platformName: windows 10
+    browserName: chrome
+    browserVersion: latest
+    src:
+      - tests/*.test.js
+  - name: Chrome Latest-1
+    platformName: windows 10
+    browserName: chrome
+    browserVersion: latest-1
+    src:
+      - tests/*.test.js
+  - name: Chrome Latest-2
+    platformName: windows 10
+    browserName: chrome
+    browserVersion: latest-2
+    src:
+      - tests/*.test.js
+  - name: Chrome Latest-3
+    platformName: windows 10
+    browserName: chrome
+    browserVersion: latest-3
+    src:
+      - tests/*.test.js
+  - name: Chrome Latest-4
+    platformName: windows 10
+    browserName: chrome
+    browserVersion: latest-4
+    src:
+      - tests/*.test.js
+  - name: Chrome Latest-5
+    platformName: windows 10
+    browserName: chrome
+    browserVersion: latest-5
+    src:
+      - tests/*.test.js
+  - name: Edge Latest
+    platformName: windows 10
+    browserName: microsoftedge
+    browserVersion: latest
+    src:
+      - tests/*.test.js
+  - name: Edge Latest-1
+    platformName: windows 10
+    browserName: microsoftedge
+    browserVersion: latest-1
+    src:
+      - tests/*.test.js
+  - name: Edge Latest-2
+    platformName: windows 10
+    browserName: microsoftedge
+    browserVersion: latest-2
+    src:
+      - tests/*.test.js
+  - name: Edge Latest-3
+    platformName: windows 10
+    browserName: microsoftedge
+    browserVersion: latest-3
+    src:
+      - tests/*.test.js
+  - name: Edge Latest-4
+    platformName: windows 10
+    browserName: microsoftedge
+    browserVersion: latest-4
+    src:
+      - tests/*.test.js
+  - name: Edge Latest-5
+    platformName: windows 10
+    browserName: microsoftedge
+    browserVersion: latest-5
+    src:
+      - tests/*.test.js
+  - name: Firefox Latest
+    platformName: windows 10
+    browserName: firefox
+    browserVersion: latest
+    src:
+      - tests/*.test.js
+  - name: Firefox Latest-1
+    platformName: windows 10
+    browserName: firefox
+    browserVersion: latest-1
+    src:
+      - tests/*.test.js
+  - name: Firefox Latest-2
+    platformName: windows 10
+    browserName: firefox
+    browserVersion: latest-2
+    src:
+      - tests/*.test.js
+  - name: Firefox Latest-3
+    platformName: windows 10
+    browserName: firefox
+    browserVersion: latest-3
+    src:
+      - tests/*.test.js
+  - name: Firefox Latest-4
+    platformName: windows 10
+    browserName: firefox
+    browserVersion: latest-4
+    src:
+      - tests/*.test.js
+  - name: Firefox Latest-5
+    platformName: windows 10
+    browserName: firefox
+    browserVersion: latest-5
+    src:
+      - tests/*.test.js
